@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saeta - Personalización</title>
+    <link rel="stylesheet" href="./assets/css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="header row between-xs">
+      <h1>MODULO DE PERSONALIZACIÓN</h1>
+      <button class="header__close-btn" type="button">
+        <i class="icon-close"></i>
+      </button>
+    </header>
+    <div class="row between-xs">
+      <section class="col-xs-12 col-md-6 article-section row bottom-xs">
+        <aside class="edit-options row col-xs-2 center-xs">
+          <button><i class="icon-deshacer"></i> DESHACER</button>
+          <button><i class="icon-rehacer"></i>REHACER</button>
+          <button><i class="icon-reset"></i>RESET</button>
+        </aside>
+        <div class="article-section__list col-xs-2">
+          <div class="article-section__list__item">
+            <figure>
+              <img src="./assets/images/product/product_1.png" alt="" />
+              <figcaption>
+                <small>MANGA DERECHA</small>
+                <span>$5000</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="article-section__list__item">
+            <figure>
+              <img src="./assets/images/product/product_2.png" alt="" />
+              <figcaption>
+                <small>MANGA DERECHA</small>
+                <span>$5000</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="article-section__list__item">
+            <figure>
+              <img src="./assets/images/product/product_3.png" alt="" />
+              <figcaption>
+                <small>MANGA DERECHA</small>
+                <span>$5000</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="article-section__list__item">
+            <figure>
+              <img src="./assets/images/product/product_4.png" alt="" />
+              <figcaption>
+                <small>MANGA DERECHA</small>
+                <span>$5000</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <section class="main-image col-xs-8">
+          <img src="./assets/images/product/product_main.png" alt="" />
+        </section>
+      </section>
+      <section class="col-xs-12 col-md-6 article-options">
+        <div class="tabset row start-xs">
+          <!-- Tab 1 -->
+          <input
+            type="radio"
+            name="tabset"
+            id="tab1"
+            aria-controls="product"
+            checked
+          />
+          <label for="tab1">
+            <i class="icon-product"></i>
+            PRODUCTO
+          </label>
+          <!-- Tab 2 -->
+          <input type="radio" name="tabset" id="tab2" aria-controls="image" />
+          <label for="tab2">
+            <i class="icon-add-img"></i>
+            AGREGAR IMAGEN
+          </label>
+          <!-- Tab 3 -->
+          <input type="radio" name="tabset" id="tab3" aria-controls="text" />
+          <label for="tab3">
+            <i class="icon-add-text"></i>
+            AGREGAR TEXTO
+          </label>
+          <!-- Tab 4 -->
+          <input type="radio" name="tabset" id="tab4" aria-controls="list" />
+          <label for="tab4">
+            <i class="icon-list-items"></i>
+            LISTADO
+          </label>
+          <!-- Tab 5 -->
+          <input type="radio" name="tabset" id="tab5" aria-controls="edit" />
+          <label for="tab5">
+            <i class="icon-edit-item"></i>
+            EDITAR
+          </label>
+
+          <div class="tab-panels">
+            <section id="product" class="tab-panel">
+              <h2><span>PRODUCTO:</span> SKU 123456 MELÓN</h2>
+              <ul class="info-warning">
+                <li>
+                  No se puede personalizar nada en costuras ni donde esté
+                  ubicado un logo, no agregues nada si ves alguno de estos
+                  elementos.
+                </li>
+                <li>
+                  Esta es una aproximación de tu personalización, pueden haber
+                  diferencias en color, tamaños y ubicación.
+                </li>
+                <li>
+                  Productos personalizados no tiene cambios ni devoluciones.
+                </li>
+                <footer class="row center-xs around-xs">
+                  <a href="#" class="terms-conditions"
+                    ><i class="icon-term-conditions"></i><p>
+											Aplican términos y
+											condiciones
+										</p></a
+                  >
+									<a href="#" class="warning-btn"><i class="icon-warning"></i>
+										<p>Tener en cuenta</p>
+									</a>
+                </footer>
+              </ul>
+            </section>
+            <section id="image" class="tab-panel">
+              <section class="options-add">
+                <div class="row col-xs-12 center-xs around-xs">
+                  <div class="col-xs-12 col-sm-6 row center-xs">
+                    <button class="active row center-xs">
+                      <i class="icon-pre-design"></i>
+                      <p>
+                        PREDISEÑO
+                      </p>
+                    </button>
+                    <span>VALOR $5.500</span>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 row center-xs">
+                    <button class="row center-xs">
+                      <i class="icon-upload-img"></i>
+                      <p>
+                        SUBIR LOGO
+                      </p>
+                    </button>
+                    <span>VALOR $7.500</span>
+                  </div>
+                </div>
+              </section>
+            </section>
+            <section id="text" class="tab-panel">
+              <div class="price">
+                <p> VALOR $7.500 </p>
+              </div>
+              <div class="form-group row end-xs">
+                <input class="col-xs-12" type="text" placeholder="Tu Texto Aquí">
+                <div class="col-xs-4">
+                  <button>AGREGAR TEXTO</button>
+                </div>
+              </div>
+              <div class="form-group row end-xs">
+                <input class="col-xs-12" type="text" placeholder="Agregar Número">
+                <div class="col-xs-4">
+                  <button>AGREGAR NÚMERO</button>
+                </div>
+              </div>
+            </section>
+            <section id="list" class="tab-panel">
+              <div class="location-item">
+                <h3>FRENTE</h3>
+                <ul class="location-item__list">
+                  <li>
+                    <input type="checkbox" name="frente" id="frente">
+                    <label for="frente">
+                      <div class="location-item__list__item row middle-xs between-xs">
+                        <i class="icon-pre-design col-xs-1"></i>
+                        <span class="text-item col-xs-10">
+                          <h5>DISEÑO 1</h5>
+                          <p>$5.000</p>
+                        </span>
+                        <i class="icon-bin col-xs-1"></i>
+                      </div>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="location-item">
+                <h3>ESPALDA</h3>
+                <ul class="location-item__list">
+                  <li>
+                    <input type="checkbox" name="frente" id="espalda-1">
+                    <label for="espalda-1">
+                      <div class="location-item__list__item row middle-xs between-xs">
+                        <i class="icon-add-text col-xs-1"></i>
+                        <span class="text-item col-xs-10">
+                          <h5>TEXTO SUPERIOR</h5>
+                          <p>$10.000</p>
+                        </span>
+                        <i class="icon-bin col-xs-1"></i>
+                      </div>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="frente" id="espalda-2">
+                    <label for="espalda-2">
+                      <div class="location-item__list__item row middle-xs between-xs">
+                        <i class="icon-upload-img col-xs-1"></i>
+                        <span class="text-item col-xs-10">
+                          <h5>IMAGEN</h5>
+                          <p>$15.000</p>
+                        </span>
+                        <i class="icon-bin col-xs-1"></i>
+                      </div>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="total-payment">
+                <p>VALOR: $ 15.850</p>
+              </div>
+            </section>
+            <section id="edit" class="tab-panel">
+              <h2>EDITAR</h2>
+            </section>
+          </div>
+        </div>
+        <div class="article-options__button">
+          <button class="btn-default">AGREGAR A CARRITO</button>
+          <!-- <button class="btn-default">CONFIRMAR DISEÑO</button> -->
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
